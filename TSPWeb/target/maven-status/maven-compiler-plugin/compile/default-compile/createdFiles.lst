@@ -1,0 +1,11 @@
+com\mis\tspweb\webservice\response\MyResponse.class
+com\mis\tspweb\webservice\resquest\ObjectRequest.class
+com\mis\tspweb\webservice\core\RestServices.class
+com\mis\tspweb\webservice\resquest\ListRequest.class
+com\mis\tspweb\webservice\core\CodeError.class
+com\mis\tspweb\webservice\core\TSPServices.class
+com\mis\tspweb\webservice\resquest\HeaderRequest.class
+com\mis\tspweb\webservice\core\CoreTSPService.class
+com\mis\tspweb\webservice\response\ObjectResponse.class
+com\mis\tspweb\webservice\dto\PointDto.class
+com\mis\tspweb\webservice\response\ListResponse.class
