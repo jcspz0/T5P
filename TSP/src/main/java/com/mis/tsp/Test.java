@@ -62,15 +62,25 @@ public class Test {
         EngineGH e= EngineGH.getSingletonInstance();
         double distancia = e.distanceBetween2Points(new PointDto(-17.7580821, -63.1746598), new PointDto(-17.7584948, -63.1749769));
         List<PointDto> puntos= new ArrayList<>();
-        puntos.add(new PointDto(10, 10));
-        puntos.add(new PointDto(7.666666, 7));
-        puntos.add(new PointDto(5, 13));
-        puntos.add(new PointDto(15, 7));
-        puntos.add(new PointDto(15, 13));
-        System.out.println(e.solveTSP(puntos));
-        System.out.println(distancia);
+        puntos.add(new PointDto(-17.7561919,-63.1748004));
+        puntos.add(new PointDto(-17.755574, -63.1731009));
+        puntos.add(new PointDto(-17.7563833, -63.1721787));
+        puntos.add(new PointDto(-17.757273, -63.1741593));
+        puntos.add(new PointDto(-17.7561466, -63.1743976));
+//        prub();
+        e.solveTSPMatrizCost(puntos);
+//        System.out.println(e.solveTSP(puntos));
+//        System.out.println(distancia);
 //        Test t = new Test();
 //        t.testJSprit();
+    }
+    
+    public static void prub(){
+        for (int i = 0; i < 3; i++) {
+            for (int j = i+1; j < 3+1; j++) {
+                System.out.println("i="+i+",j="+j);
+            }
+        }
     }
     
     public void testJSprit(){

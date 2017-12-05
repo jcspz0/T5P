@@ -48,7 +48,7 @@ public class CoreTSPService {
 //                response.getValues().add(new PointDto(-10, -12, "descripcion"));
 //                response.getValues().add(new PointDto(-13, -15, "descripcion"));
                 ng=EngineGH.getSingletonInstance();
-                List<com.mis.tsp.dto.PointDto> respTSP = ng.solveTSP(parseListResttoApi(puntosRequest));
+                List<com.mis.tsp.dto.PointDto> respTSP = ng.solveTSPMatrizCost(parseListResttoApi(puntosRequest));
 	        response.setValues(new ArrayList<PointDto>(parseListApitoRest(respTSP)));
                 response.setError(CodeError.WS_CODE_SUCCESSFUL);
 	        response.setMessage("Se obtuvieron los datos de manera exitosa");
